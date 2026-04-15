@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.35s ease, color 0.35s ease;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+:root {
+  --bg: #0b0b0c;
+  --surface: #111113;
+  --surface-2: #18181b;
+  --whites:#525252;
+  --text: #ffffff;
+  --muted: #b8b8c0;
+  --border: rgba(255, 255, 255, 0.12);
+  --accent: #ffffff;
+  --accent-soft: rgba(255, 255, 255, 0.08);
+  --nav-bg: rgba(10, 10, 12, 0.7);
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="light"] {
+  --bg: #f4f4f0;
+  --surface: #ffffff;
+  --surface-2: #ecece6;
+  --text: #0e0e10;
+  --muted: #4e4e57;
+  --border: rgba(10, 10, 12, 0.12);
+  --accent: #0e0e10;
+  --accent-soft: rgba(10, 10, 12, 0.08);
+  --nav-bg: rgba(255, 255, 255, 0.72);
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
+}
+
+::selection {
+  background: var(--text);
+  color: var(--bg);
+}
